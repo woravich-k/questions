@@ -21,7 +21,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Locational-Based Quiz App help</title>
+    <title>Question Setting App help</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
-    <link rel="stylesheet" href="styles_help.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
     #view-source {
       position: fixed;
@@ -72,9 +72,9 @@
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#features" class="mdl-layout__tab">Login</a>
-          <a href="#details" class="mdl-layout__tab">Quiz</a>
-          <a href="#faq" class="mdl-layout__tab">Find Question</a>
+          <a href="#features" class="mdl-layout__tab">Add</a>
+          <a href="#details" class="mdl-layout__tab">Edit</a>
+          <a href="#faq" class="mdl-layout__tab">Delete</a>
        
           
         </div>
@@ -86,12 +86,13 @@
             <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>Help</h4>
-				<p>This help is for users who use the location-based quiz. There are three functions guilded in this help: How to login, How to do the quiz, and How to findout the questions.</p>
-				<p>In order to go back to the app click 'Back to App' at the bottom of this page.</p>
-				<p>Please contact your admin, if you need to manipulate any questions on the quiz.</p>
+				<p>This help is for users who want to manipulate (Add, Edit and Delete) the questions showing on the location-based quiz. The users who want to use the quiz app click dowload below.</p>
+				<p> In order to go back to the setting app click 'Back to App' at the bottom of this page.</p>
 				<p>If any further help is needed, plese contact w.kumthonkittikul@ucl.ac.uk</p>
               </div>
-              
+              <div class="mdl-card__actions">
+                <a href="https://build.phonegap.com/apps/3152679/builds" class="mdl-button">Download the quiz application</a>
+              </div>
             </div>
             
           </section>
@@ -101,47 +102,53 @@
         <div class="mdl-layout__tab-panel" id="features">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h3>How to login</h3>
-			  <h4> Content:<h4>
-			  <ul>
-			  <a href = "#login"><li> Login with your account</li></a>
-			  <a href = "#newAcc"><li >Create new account</li></a>
-			  <a href = "#logout"><li > Logout from the system</li></a>
-			  </ul>
-			  
-			  <h4 id="login">Login with your account<h4>
-			  <p>Type username and password. Then click 'Login'</p>
-			  <img src = "./images/login01.jpg" width = 100%> 
-			  <p></br></p>
-              <p>If your username or password or both are not correct, the login window would show as below.</p>
-			  <img src = "./images/login02.jpg" width = 100%>
-			  <p></br></p>
-              <p>If the user could login succesfully, there are a message shown as below. Click OK to go into the app.</p>
-			  <img src = "./images/login03.jpg" width = 100%>
-			  
-			  <h4 id="newAcc">Create new account<h4>
-              <p>Click 'Click Here' button at the login window</p>
-			  <img src = "./images/login04.jpg" width = 100%> 
-			  <p></br></p>
-              <p>Type username and password. Then confirm password and click 'Create' button. </p>
-			  <img src = "./images/login05.jpg" width = 100%>
-			  <p></br></p>
-              <p>If the password and confirmed password do not match, there will be a massage shown as below</p>
-			  <img src = "./images/login06.jpg" width = 100%>
-			  <p></br></p>
-              <p>If the username is already taken, there will be a massage shown as below. So, change to the other username and try again</p>
-			  <img src = "./images/login07.jpg" width = 100%>
-			  <p></br></p>
-              <p>If the account is created succesfully, the account will be login automatically. There are 2 massages reporting as shown below.</p>
-			  <img src = "./images/login08.jpg" width = 100%>
-			  <img src = "./images/login09.jpg" width = 100%>
-			  
-			  <h4 id="logout">Logout from the system<h4>
-			  <p>Click home button at the top-left conner</p>
-			  <img src = "./images/login10.jpg" width = 100%>
-			  <p></br></p>
-              <p>Click dropdown arrow, beside your username. Then click 'Logout'</p>
-			  <img src = "./images/login11.jpg" width = 100%>
+              <h3>Add Question</h3>
+            
+
+              <h5>Step 1</h5>
+			  <p>Click Add button near the list of questions</p>
+			  <img src = "./images/add01.jpg" width = 100%>
+              
+              <p>The question form will be loaded below the list. You might need to scroll/drag down down to see the form</p>
+			  <img src = "./images/add02.jpg" width = 100%>
+			  </br>
+              <h5>Step 2</h5>
+			  <p>Fill in the question. The image URL of the question is optional.</p>
+			  <img src = "./images/add03.jpg" width = 100%>
+			  <p>Note that: the image will be shown as a part of the question in the quiz app.</p>
+			  </br>
+              <h5>Step 3</h5>
+			  <p>Fill in choices and select the correct answer. These choices' image URL are optional.</p>
+			  <img src = "./images/add04.jpg" width = 100%>
+			  <p>Note that: the images will be shown as a part of each choice in the quiz app.</p>
+			  </br>
+			  <h5>Step 4</h5>
+			  <p>Locate the question position. Then click 'Start Data Upload'.</p>
+			  <p>You have choices to drag the marker on the map, or click locate me button, or fill in the coordinates</p>
+			  <img src = "./images/add05.jpg" width = 100%>
+			  </br>
+			  <h5>Step 5</h5>
+			  <p>Locate the question position. Then click 'Start Data Upload'.</p>
+			  <p>You have choices to drag the marker on the map, or click the locate me button, or fill in the coordinates</p>
+			  <img src = "./images/add05.jpg" width = 100%>
+			  </br>
+			  <h5>Step 6</h5>
+			  <p>If the question is uploaded succesfully, there will be a message as shown below. Click OK to continue.</p>
+			  <img src = "./images/add06.jpg" width = 100%>
+			  <p>Then, your recent question will be shown on the list.</p>
+			  <img src = "./images/add07.jpg" width = 100%>
+			  </br>
+			  <h4 style = "color: red;"> Error Handling</h4>
+			  <h5 style = "color: red;">Missing information</h5>
+			  <p>You might miss to specify any choices or question. So, fill in the missing part.</p>
+			  <img src = "./images/add08.jpg" width = 100%> 
+			  <p></br> </br>You might miss to select the correct answer. So, check the correct answer box.</p>
+			  <img src = "./images/add09.jpg" width = 100%>
+			  </br>
+			  <h5 style = "color: red;">Taken location</h5>
+			  <p>The selected location is already taken by the another question. So, move to another location</p>
+			  <img src = "./images/add10.jpg" width = 100%>
+			  <img src = "./images/add11.jpg" width = 100%>
             </div>
           </section>
         </div>
@@ -149,85 +156,45 @@
 		<div class="mdl-layout__tab-panel" id="details">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h3>How to do the quiz</h3>
-			  <h4> Content:<h4>
-			  <ul>
-			  <a href = "#start"><li>Start the quiz</li></a>
-			  <a href = "#question"><li>Answer the question</li></a>
-			  <a href = "#score"><li>Check your score</li></a>
-			  <a href = "#location"><li>Track my location</li></a>
-			  </ul>
-              
-			  <h4 id="start">Start the quiz<h4>
-			  <p>Click home button at the top-left conner</p>
-			  <img src = "./images/quiz01.jpg" width = 100%> 
-			  <p></br></p>
-              <p>Activate the 'Start Quiz' button</p>
-			  <img src = "./images/quiz02.jpg" width = 100%>
-			  <p>Note that: this button will automatically activate current 'Location' button, since the current location is needed to do the quiz.</br> The 'Start Quiz' button will also be automatically deactivated, if the Location is tuned off</p>
-			  <p>In order to learn more about current location button, please see <a href = "#location">Track my location</a></p>
-			  <p></br></p>
-			  
-			  <h4 id="question">Answer the question<h4>
-			  <p>The question will be automatically popped up, if the user's location is within a 100-meter distance from any unaswered question. The question would not change until the user answer the poped up question</p>
-			  <p>In order to learn more how to find questions and get more details about question, please see 'Find Locaion'</p>
-			  <img src = "./images/quiz03.png" width = 100%> 
-			  <p></br></p>
-              <p>Drag/scroll down to see all posible choices, if it is needed. Tap on the box(choice) to select your answer. Then the app will ask you to confim your answer</p>
-			  <img src = "./images/quiz04.jpg" width = 100%>
-			  <p></br></p>
-			  <p>The app will show the correct answer by Green colour</p>
-			  <p>If you select correct answer:</p>
-			  <img src = "./images/quiz05.jpg" width = 100%>
-			  <p>If you select wrong answer:</p>
-			  <img src = "./images/quiz06.jpg" width = 100%>
-			  <p>Your current score will be summarised below. Click Next to continue</p>
-			  <p></br></p>
-			  
-			  <h4 id="score">Check your score<h4>
-			  <p>Click home button at the top-left conner</p>
-			  <img src = "./images/quiz07.jpg" width = 100%> 
-			  <p></br></p>
-              <p>Click at 'Check current score' button</p>
-			  <img src = "./images/quiz08.png" width = 100%>
-			  <p></br></p>
-              <p>The app will report your current score and show how many questions that the user hasn't answered</p>
-			  <img src = "./images/quiz09.jpg" width = 100%>
-			  <p></br></p>
-			  
-			  <h4 id="location">Track my location<h4>
-			  <p>At the side menu, click 'Location' button to track the device's current position</p>
-			  <img src = "./images/quiz10.jpg" width = 100%>
-			  <p>Note that, the auto pan will initailly activated, to track the position. However, this would be deactivated, if the users drag the map or in some situations</p>
-			  <p>In order to reactivate auto pan, click 'Pan to current location.' 
-			   
+              <h3>Edit Question</h3>
+            
 
+              <h5>Step 1</h5>
+			  <p>Click edit button at the question on the list.</p>
+			  <img src = "./images/edit01.jpg" width = 100%>
+              <p>You might need to reload the list by clicking at the reload button at the end of the page. </p>
+              
+			  </br>
+              <h5>Step 2</h5>
+			  <p>The form of the selected question will be shown just below the list. Fill in the form same as adding question and click 'Edit Question' button.</p>
+			  <img src = "./images/edit02.jpg" width = 100%>
+			  <p>Note that: You might need to scroll/drag down down to see the form.</p>
+			  </br>
+			  <h5>Step 3</h5>
+			  <p>If the question is updated successfully, there is a message shown as below. Click OK to continue.</p>
+			  <img src = "./images/edit03.jpg" width = 100%>
+			  </br>
             </div>
           </section>
         </div>
-		
-		
         
 		<div class="mdl-layout__tab-panel" id="faq">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
-              <h3>How to find questions</h3>
-			  
-			  <p>In order to find all questions, both answered and unaswered, click on the 'Questions' button at the side menu.</p>
-			  <img src = "./images/question01.png" width = 100%>
-              <p>At some situations -i.e. the quiz is activated, the map would not zoom to all questions automatically. However, you can zoom and pan to all questions by the 'Zoom to Questions' button.</p>
-			  <p></br></p>
-			  <p>The question that the current user hasn't answered will be shown in gray marker. Red repesents the answered questions that the user answered wrong, while the correct is green</p>
-			  <img src = "./images/question02.png" width = 100%>
-			  <p></br></p>
-              <p>Tap on the marker to get more info</p>
-			  <p>Tap on the answered markers will show the detials about questions</p>
-			  <img src = "./images/question03.jpg" width = 100%>
-			  <p></br></p>
-			  <p>Tap on the unanswered markers will offer you to be navigated there by Google Map. Click at the link to get directions from Google Map</p>
-			  <img src = "./images/question04.jpg" width = 100%>
-			  
-			  
+              <h3>Delete Question</h3>
+            
+
+              <h5>Step 1</h5>
+			  <p>Click delete button at the question on the list.</p>
+			  <img src = "./images/delete01.jpg" width = 100%>
+			  </br>
+              <h5>Step 2</h5>
+			  <p>Click OK to confirm.</p>
+			  <img src = "./images/delete02.jpg" width = 100%>
+			  </br>
+			  <h5>Step 3</h5>
+			  <p>If the question is deleted successfully, there is a message shown as below. Click OK to continue. Then the question will be removed from the list</p>
+			  <img src = "./images/delete03.jpg" width = 100%>
             </div>
           </section>
         </div>
