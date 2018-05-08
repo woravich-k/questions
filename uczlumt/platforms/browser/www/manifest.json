@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Add Questions",
-  "short_name": "Add Questions",
-  "version": "BasicApp",
-  "description": "Hello World sample application that responds to the deviceready event.",
+  "name": "Question Setting App",
+  "short_name": "Question Setting App",
+  "version": "QuestionSettingApp",
+  "description": "This is an application adding, editing, and deleting questions for Location-Based Quiz App.",
   "author": "PhoneGap Team",
   "icons": [],
   "start_url": "index.html"
