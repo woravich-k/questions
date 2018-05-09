@@ -2,7 +2,7 @@
 <widget id="QuestionSettingApp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Question Setting App</name>
     <description>
-        An question setting app for manipulating questions in location-based quiz app.
+        A question setting app for manipulating questions in location-based quiz app.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
