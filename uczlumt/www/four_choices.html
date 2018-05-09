@@ -87,27 +87,7 @@
 				</ul> 
 				</td>
 			</tr>
-			<!-- <tr> -->
-				<!-- <td> <input type ="radio" name = "fourChoices" id = "ans2"> </td> -->
-				<!-- <td> <label for = "ans2">Choice 2:</label> </td> -->
-				<!-- <td> <input type = "text" size = "50" id = "choice2" /> </td> -->
-				<!-- <td> <label for = "choice2url">img URL:</label> </td> -->
-				<!-- <td> <input type = "url" size ="50" id = "choice2url" /> </td> -->
-			<!-- </tr> -->
-			<!-- <tr> -->
-				<!-- <td> <input type ="radio" name = "fourChoices" id = "ans3"> </td> -->
-				<!-- <td> <label for = "ans3">Choice 3:</label> </td> -->
-				<!-- <td> <input type = "text" size = "50" id = "choice3" /> </td> -->
-				<!-- <td> <label for = "choice3url">img URL:</label> </td> -->
-				<!-- <td> <input type = "url" size ="50" id = "choice3url" /> </td> -->
-			<!-- </tr> -->
-			<!-- <tr> -->
-				<!-- <td> <input type ="radio" name = "fourChoices" id = "ans4"> </td> -->
-				<!-- <td> <label for = "ans4">Choice 4:</label> </td> -->
-				<!-- <td> <input type = "text" size = "50" id = "choice4" /> </td> -->
-				<!-- <td> <label for = "choice4url">img URL:</label> </td> -->
-				<!-- <td> <input type = "url" size ="50" id = "choice4url" /> </td> -->
-			<!-- </tr> -->
+			
 		</table>
 		
 		</div>
@@ -120,10 +100,12 @@
 			<div id = "mapid" style="width: 100%;height: 200px; z-index:1;"></div>
 		</div>
 		
+		<!-- onchange will call a function to move marker -->
 		<div><label for = "lat">Latitude </label> <input type = "number" id = "lat" value ="51.524" onchange = "movemarker()"/></div>
 		<div><label for = "lon">Longitude </label> <input type = "number" id = "lon" value = "-0.134" onchange = "movemarker()"/></div>
 		<div>
 			<br />
+			<!-- this might be changed for the editing question -->
 			<div id = "upload" style = "display: inline;"> <button id = "startUpload" class = "btn" onclick ="startDataUpload()"> <i class = "material-icons">cloud_upload</i>  Start Data Upload</button> </div>
 			<button id = "cancel" class = "btn" onclick ="cancel()"> <i class = "material-icons">not_interested</i>  Cancel</button><br />
 			
