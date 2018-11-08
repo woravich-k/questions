@@ -111,7 +111,7 @@ function startDataUpload(){
 var client;
 function postData(postString){
 	client = new XMLHttpRequest();
-	client.open('POST','https://developer.cege.ucl.ac.uk:31083/uploadQuestion',true);
+	client.open('POST','https://www.woravich-k.com:49154/uploadQuestion',true);
 	client.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	//wait for the respond and condunct dataUploaded function
 	client.onreadystatechange = dataUploaded;
@@ -195,7 +195,7 @@ function startDataUpdate(id){
 //post to the server
 function processDataEdit(postString){
 	client = new XMLHttpRequest();
-	client.open('POST','https://developer.cege.ucl.ac.uk:31083/editQuestion/',true);
+	client.open('POST','https://www.woravich-k.com:49154/editQuestion/',true);
 	client.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	//use shared function to wait the respond with create new question
 	client.onreadystatechange = dataUploaded;
@@ -208,7 +208,7 @@ function processDataEdit(postString){
 //get id from the buttons
 function deleteQuestion(id){
 	if (confirm("Press OK to delete this question?") == false) return;
-	deleteURL = "https://developer.cege.ucl.ac.uk:31083/deleteRow/question/" + id;
+	deleteURL = "https://www.woravich-k.com:49154/deleteRow/question/" + id;
 	client = new XMLHttpRequest();
 	client.open('GET', deleteURL);
 	client.onreadystatechange = deleteResponse; 

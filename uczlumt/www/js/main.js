@@ -8,7 +8,7 @@ var client;
 //adapted from the practicle codes in the module
 function loadQuestion(){
 	//requesting geoJSON of the questions to create the list of the question
-	var url = 'https://developer.cege.ucl.ac.uk:31083/getGeoJSON/question/geom'
+	var url = 'https://www.woravich-k.com:49154/getGeoJSON/question/geom'
 	client = new XMLHttpRequest();
 	
 	client.open('GET', url);
